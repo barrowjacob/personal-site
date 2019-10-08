@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("../img/abstract-art-artistic-2457274.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron img {
+    margin-top: -47px;
+    margin-right: 100px;
+}
+h2 {
+    text-shadow: 2px 2px #001599;
+}
+
+.pointer {
+    cursor: pointer;
+}
