@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-image: linear-gradient(to left, lightcyan, antiquewhite);
+}
+
 .jumbotron {
     background-image: url("../img/abstract-art-artistic-2457274.jpg");
     background-size: cover;
@@ -18,4 +22,14 @@ h2 {
 
 .pointer {
     cursor: pointer;
+}
+
+.glow {
+    box-shadow: 3px 3px 3px 1px gray;
+}
+.hoverglow:hover {
+    box-shadow: 0 0 7px 3px lightgrey;
+}
+.grow:hover {
+    transform: scale(1.05);
 }
