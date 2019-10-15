@@ -4,9 +4,14 @@
 }
 
 body {
-    background-image: linear-gradient(to left, lightcyan, antiquewhite);
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+#navbar {
+    background-image: linear-gradient(to right, lightcyan, antiquewhite);
+    box-shadow: 0 0 3px 1px lightgrey;
+}
 .jumbotron {
     background-image: url("../img/abstract-art-artistic-2457274.jpg");
     background-size: cover;
@@ -32,4 +37,58 @@ h2 {
 }
 .grow:hover {
     transform: scale(1.05);
+}
+.big_font {
+    font-size: 1.5em;
+}
+.full_height {
+    height: 100%;
+}
+li:nth-child(1) {
+    display: flex;
+    align-self: center;
+}
+#btn_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 555px;
+}
+#resumebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 265px;
+    background-image: linear-gradient(to right, #001599, #4457bb);
+    font-size: 2em;
+    color: lavender;
+    box-shadow: 0 0 2px 1px lightgrey;
+
+}
+#resumebtn a {
+    color: azure;
+    text-decoration: none;
+}
+.high_top {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#lang_row img {
+    height: 50px;
+    width: 50px;
+    margin: 40px;
+}
+#lang_row2 img {
+    height: 50px;
+    width: 50px;
+    margin: 40px;
+}
+#lang_cont {
+    background: #20002c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: 100px;
 }
