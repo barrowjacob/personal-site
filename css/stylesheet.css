@@ -3,16 +3,335 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
-    background: linear-gradient(to right, lightskyblue, lightsteelblue);
     overflow: hidden;
+    width: 100vw;
 }
 .container {
+    background: linear-gradient(to right, lightskyblue, lightsteelblue);
     margin: 0;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
+    z-index: -3;
+    position: absolute;
+    animation: bgcolor 200s infinite linear;
+}
+
+@keyframes bgcolor {
+    0%, 100% {
+        background: radial-gradient(at 0% 100%, black, darkblue);
+    }
+    1% {
+        background: radial-gradient(at 0% 100%, black, darkblue);
+    }
+    2% {
+        background: radial-gradient(at 0% 100%, black, darkblue);
+    }
+    3% {
+        background: radial-gradient(at 0% 100%, black, darkblue);
+    }
+    4% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    5% {
+        background: radial-gradient(farthest-corner, darkblue, blue);
+    }
+    6% {
+           background: radial-gradient(farthest-corner, black, darkblue);
+       }
+    7% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    8% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    9% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+
+    10% {
+        background: radial-gradient(farthest-side, blue, lightblue);
+    }
+    11% {
+         background: radial-gradient(farthest-side, black, darkblue);
+     }
+    12% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    13% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    14% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    15% {
+        background: radial-gradient(farthest-side, lightblue, lightyellow);
+    }
+    16% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    17% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    18% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    19% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    20% {
+        background: radial-gradient(closest-corner, lightyellow, yellow);
+    }
+    21% {
+         background: radial-gradient(closest-corner, black, darkblue);
+     }
+    22% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+   23% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    24% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    25% {
+        background: radial-gradient(closest-corner, yellow, gold);
+    }
+    26% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    27% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    28% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    29% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+
+    30% {
+        background: radial-gradient(closest-side, gold, orange);
+    }
+    31% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    32% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    33% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    34% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    35% {
+        background: radial-gradient(closest-side, orange, darkorange);
+    }
+    36% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    37% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    38% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    39% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    40% {
+        background: radial-gradient(farthest-corner, darkorange, orangered);
+    }
+    41% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    42% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    43% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    44% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    45% {
+        background: radial-gradient(farthest-corner, orangered, red);
+    }
+    46% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    47% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    48% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    49% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+
+    50% {
+        background: radial-gradient(farthest-side, red, darkred);
+    }
+    51% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+   52% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    53% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    54% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+
+    55% {
+        background: radial-gradient(farthest-side, darkred, purple);
+    }
+    56% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    57% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    58% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    59% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+
+    60% {
+        background: radial-gradient(closest-corner, purple, darkviolet);
+    }
+    61% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    62% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    63% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    64% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+
+    65% {
+        background: radial-gradient(closest-corner, darkviolet, blueviolet);
+    }
+    66% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    67% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    68% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+    69% {
+        background: radial-gradient(closest-corner, black, darkblue);
+    }
+
+    70% {
+        background: radial-gradient(closest-side, blueviolet, lightblue);
+    }
+    71% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    72% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    73% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    74% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+
+    75% {
+        background: radial-gradient(closest-side, lightblue, blue);
+    }
+    76% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    77% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    78% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+    79% {
+        background: radial-gradient(closest-side, black, darkblue);
+    }
+
+    80% {
+        background: radial-gradient(farthest-corner, blue, darkblue);
+    }
+    81% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    82% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    83% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    84% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+
+    85% {
+        background: radial-gradient(farthest-corner, darkblue, black);
+    }
+    86% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    87% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    88% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+    89% {
+        background: radial-gradient(farthest-corner, black, darkblue);
+    }
+
+    90% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    91% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    92% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    93% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    94% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+
+    95% {
+        background: radial-gradient(farthest-side, darkblue, black);
+    }
+    96% {
+         background: radial-gradient(farthest-side, black, darkblue);
+     }
+    97% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    98% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+    99% {
+        background: radial-gradient(farthest-side, black, darkblue);
+    }
+
 }
 @keyframes move-sun {
     from {
@@ -23,21 +342,17 @@ body {
         transform: rotate(360deg);
     }
 }
-
-.sun {
+.rotadiv {
     position: relative;
     left: 35%;
     top: 300px;
     width: 30vw;
     height: 10vh;
     animation: move-sun 200s infinite linear;
-    display: flex;
-    justify-content: center;
     z-index: -5;
 }
 .sun_sun {
     position: absolute;
-    content: "";
     width: 400px;
     height: 400px;
     background-color: #ff0;
@@ -46,21 +361,22 @@ body {
 }
 .moon_moon {
     position: absolute;
-    top: 500px;
+    top: 300px;
     animation: rotate 100s ease-in-out infinite;
 }
-@keyframes rotate {
-    from {
-        transform: rotate(0);
-    } to {
-    transform: rotate(360deg);
-          }
-}
+    @keyframes rotate {
+        from {
+            transform: rotate(0);
+        } to {
+        transform: rotate(360deg);
+              }
+    }
 .mounds {
     position: absolute;
     width: 100vw;
     height: 50vw;
     margin: 0;
+
 }
 .mound1 {
     position: absolute;
@@ -68,7 +384,7 @@ body {
     left: -100px;
     bottom: -400px;
     height: 600px;
-    width: 600px;
+    width: 40%;
     border-radius: 45% 45% 0 0;
     border: 2px solid forestgreen;
     background-color: lightgreen;
@@ -78,7 +394,7 @@ body {
     left: 200px;
     bottom: -300px;
     height: 600px;
-    width: 1000px;
+    width: 60%;
     border-radius: 75% 75% 0 0;
     border: 2px solid forestgreen;
     background-color: lightgreen;
@@ -86,21 +402,20 @@ body {
 }
 .mound3 {
     position: absolute;
-    left: 900px;
+    left: 55%;
     bottom: -350px;
     height: 600px;
-    width: 600px;
-    border-radius: 45% 45% 0 ;
+    width: 50%;
+    border-radius: 48% 48% 0 0;
     border: 2px solid forestgreen;
     background-color: lightgreen;
     z-index: -3;
 }
-.me_img img {
-    position: absolute;
-    left: 220px;
-    bottom: 150px;
-    height: 200px;
-    width: 150px;
+#me {
+   position: absolute;
+    bottom: 75px;
+    height: 250px;
+    left: 200px;
     z-index: 4;
 }
 #tree {
