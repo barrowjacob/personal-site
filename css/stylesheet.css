@@ -1,94 +1,113 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: #6190E8;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background: linear-gradient(to right, lightskyblue, lightsteelblue);
+    overflow: hidden;
 }
-#navbar {
-    background-image: linear-gradient(to right, lightcyan, antiquewhite);
-    box-shadow: 0 0 3px 1px lightgrey;
+.container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
-.jumbotron {
-    background-image: url("../img/abstract-art-artistic-2457274.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.jumbotron img {
-    margin-top: -47px;
-    margin-right: 100px;
-}
-h2 {
-    text-shadow: 2px 2px #001599;
+@keyframes move-sun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.pointer {
-    cursor: pointer;
-}
-
-.glow {
-    box-shadow: 3px 3px 3px 1px gray;
-}
-.hoverglow:hover {
-    box-shadow: 0 0 7px 3px lightgrey;
-}
-.grow:hover {
-    transform: scale(1.05);
-}
-.big_font {
-    font-size: 1.5em;
-}
-.full_height {
-    height: 100%;
-}
-li:nth-child(1) {
-    display: flex;
-    align-self: center;
-}
-#btn_holder {
-    width: 100%;
+.sun {
+    position: relative;
+    left: 35%;
+    top: 300px;
+    width: 30vw;
+    height: 10vh;
+    animation: move-sun 200s infinite linear;
     display: flex;
     justify-content: center;
-    align-items: center;
+    z-index: -5;
+}
+.sun_sun {
     position: absolute;
-    top: 555px;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-color: #ff0;
+    border-radius: 50%;
+    bottom: 300px;
 }
-#resumebtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 265px;
-    background-image: linear-gradient(to right, #001599, #4457bb);
-    font-size: 2em;
-    color: lavender;
-    box-shadow: 0 0 2px 1px lightgrey;
-
+.moon_moon {
+    position: absolute;
+    top: 500px;
+    animation: rotate 100s ease-in-out infinite;
 }
-#resumebtn a {
-    color: azure;
-    text-decoration: none;
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    } to {
+    transform: rotate(360deg);
+          }
 }
-.high_top {
-    padding-top: 100px;
-    padding-bottom: 50px;
+.mounds {
+    position: absolute;
+    width: 100vw;
+    height: 50vw;
+    margin: 0;
 }
-#lang_row img {
-    height: 50px;
-    width: 50px;
-    margin: 40px;
+.mound1 {
+    position: absolute;
+    z-index: -1;
+    left: -100px;
+    bottom: -400px;
+    height: 600px;
+    width: 600px;
+    border-radius: 45% 45% 0 0;
+    border: 2px solid forestgreen;
+    background-color: lightgreen;
 }
-#lang_row2 img {
-    height: 50px;
-    width: 50px;
-    margin: 40px;
+.mound2 {
+    position: absolute;
+    left: 200px;
+    bottom: -300px;
+    height: 600px;
+    width: 1000px;
+    border-radius: 75% 75% 0 0;
+    border: 2px solid forestgreen;
+    background-color: lightgreen;
+    z-index: -2;
 }
-#lang_cont {
-    background: #20002c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-bottom: 100px;
+.mound3 {
+    position: absolute;
+    left: 900px;
+    bottom: -350px;
+    height: 600px;
+    width: 600px;
+    border-radius: 45% 45% 0 ;
+    border: 2px solid forestgreen;
+    background-color: lightgreen;
+    z-index: -3;
+}
+.me_img img {
+    position: absolute;
+    left: 220px;
+    bottom: 150px;
+    height: 200px;
+    width: 150px;
+    z-index: 4;
+}
+#tree {
+    position: absolute;
+    left: -15px;
+    bottom: 125px;
+    height: 600px;
+    width: 400px;
+    z-index: 3;
 }

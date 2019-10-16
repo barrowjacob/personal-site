@@ -5,125 +5,32 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="css/stylesheet.css">
+      <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+      <script src='http://github.com/weepy/jquery.path/raw/master/jquery.path.js'></script>
       <script src="https://kit.fontawesome.com/927b51fa66.js" crossorigin="anonymous"></script>
       <title>Personal Site</title>
    </head>
+
+
    <body>
-
-      <!-- begin NAVBAR-->
-
-      <div class="container-fluid sticky-top border-dark" id="navbar">
-         <div class="row">
-            <div class="col-sm">
-               <ul class="nav d-flex justify-content-between">
-                  <li class="nav-item mr-auto">
-                     <a class="nav-link active full_height" href="https://i.imgur.com/tOrjiQf.png">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link big_font" href="https://www.linkedin.com/in/jacobmbarrow"><i class="fab fa-linkedin"></i></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link big_font" href="https://github.com/barrowjacob"><i class="fab fa-github"></i></a>
-                  </li>
-               </ul>
+      <div class="container">
+         <div class="sun">
+            <div class="sun_sun"></div>
+            <div class="moon_moon">
+               <svg width="115" height="220" viewBox="0 0 115 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M67 117C67 176.647 108 215 108 220C48.3532 220 0 171.647 0 112C0 52.3532 55.3532 0 115 0C115 0 67 57.3532 67 117Z" fill="#EAE2CD"/>
+               </svg>
             </div>
          </div>
+         <div class="mounds">
+            <div class="mound1"></div>
+            <div class="me_img"><img src="img/sun_bathing.png" alt=""></div>
+            <div class="mound2"></div>
+            <div class="mound3"></div>
+         </div>
+         <img src="img/oak_tree.png" id="tree" alt="">
       </div>
 
-      <!-- end NAVBAR -->
-      <!-- begin JUMBOTRON -->
-
-      <div id="jumb" class="jumbotron jumbotron-fluid mb-0">
-         <div class="container">
-            <h1 class="display-2 text-light d-flex">Meet Jacob.</h1>
-            <img src="https://render.bitstrips.com/v2/cpanel/987cfa1b-cbd3-49c6-b4de-5d62bdd31bf8-f9441112-56ca-4447-a2a7-80e5bfaeac04-v1.png?transparent=1&palette=1" class="float-right" alt="this image">
-            <p class="display-3 lead text-primary d-flex">Innovation.</p>
-            <p class="display-4 d-flex">Paranoia.</p>
-            <p class="display-3 text-dark d-flex">Sandwiches.</p>
-         </div>
-      </div>
-      <div id="btn_holder" class="mb-5">
-         <div id="resumebtn" class="border rounded pointer hoverglow grow glow" onclick="window.open('https://timedotcom.files.wordpress.com/2014/10/tripomatic.png')">See my Resume!
-         </div>
-      </div>
-
-      <!-- end JUMBOTRON -->
-      <!-- begin LANGUAGES -->
-
-      <div class="container-fluid bg-primary" id="lang_cont">
-         <div class="row d-flex justify-content-center high_top ">
-               <h2 class="text-light display-4">Langauges I Speak:</h2>
-         </div>
-         <div class="row d-flex justify-content-center" id="lang_row">
-            <img src="img/abstract-art-artistic-2457274.jpg">
-            <img src="img/beautiful-cold-dawn-547115.jpg">
-            <img src="img/black-and-white-clouds-dark-557782.jpg">
-         </div>
-         <div class="row d-flex justify-content-center" id="lang_row2">
-            <img src="img/abstract-art-artistic-2457274.jpg">
-            <img src="img/beautiful-cold-dawn-547115.jpg">
-            <img src="img/black-and-white-clouds-dark-557782.jpg">
-         </div>
-      </div>
-
-
-
-
-
-
-
-
-      <!-- end LANGUAGES -->
-      <!-- begin PROJECTS -->
-
-      <div class="d-flex justify-content-center high_top mb-5">
-         <h2 id="h2id" onclick="rotate7()" class="text-light display-4">Recent Projects:</h2>
-      </div>
-      <div class="container-fluid">
-         <div class="row d-flex align-items-stretch">
-            <div class="col-sm d-flex justify-content-end">
-                  <div class="card d-flex p-3 mb-5 bg-white rounded pointer hoverglow grow glow" onclick="window.open('https://www.youtube.com/watch?v=T0gl9LXq3LA')" style="width: 18rem;">
-                     <img src="https://placebeard.it/300x200"  class="card-img-top" alt="beardery">
-                     <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Tagline One</h6>
-                        <p class="card-text">This project was a collaborative effort between three stellar individuals, all geared towards the same goal: masterfullery.</p>
-                     </div>
-                  </div>
-            </div>
-            <div class="col-sm d-flex justify-content-center">
-               <div class="card d-flex p-3 mb-5 bg-white rounded pointer hoverglow grow glow"  onclick="window.open('https://whataburger.com/home')" style="width: 18rem;">
-                  <img src="https://www.placecage.com/300/200" class="card-img-top" alt="cagery">
-                  <div class="card-body">
-                     <h5 class="card-title">Project Two</h5>
-                     <h6 class="card-subtitle mb-2 text-muted">Tagline Two</h6>
-                     <p class="card-text">This was designed for a client who had very particular tastes and handles large amounts of traffic on the regs.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm d-flex justify-content-start">
-               <div class="card d-flex p-3 mb-5 bg-white rounded pointer hoverglow grow glow" onclick="window.open('https://img.buzzfeed.com/buzzfeed-static/static/2016-04/4/2/enhanced/webdr09/anigif_enhanced-17061-1459752078-2.gif?downsize=700:*&output-format=auto&output-quality=auto')" style="width: 18rem;">
-                  <img src="https://placebear.com/300/200" class="card-img-top" alt="bearery">
-                  <div class="card-body">
-                     <h5 class="card-title">Project Three</h5>
-                     <h6 class="card-subtitle mb-2 text-muted">Tagline Three</h6>
-                     <p class="card-text">This is a personal project made to demonstrate the colorful, creative world of web-design while still utilizing seamless and efficient code.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!-- end PROJECTS -->
-      <!-- begin FOOTER -->
-
-      <div class="container-fluid">
-         <div class="row bg-primary">
-         </div>
-      </div>
-
-      <!-- end FOOTER -->
-      <!-- begin SCRIPTS -->
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
