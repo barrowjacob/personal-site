@@ -9,52 +9,26 @@ body {
     width: 100vw;
 }
 .container {
-    background: linear-gradient(to right, lightblue, white);
+    background: linear-gradient(76deg, #0c0345, #180585, #2f0cf0, #f09b0c, #cee418);
+    background-size: 1800% 1800%;
     margin: 0;
     max-width: 100vw;
     height: 100vh;
     z-index: -1;
     position: absolute;
-}
-.light_show {
-    left: 12%;
-    top: 12%;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    background-color: transparent;
-    animation: lightshow 10s infinite linear;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    animation: bgchange 60s ease infinite;
 
 }
-@keyframes lightshow {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+
+@-webkit-keyframes bgchange {
+    0%{background-position:0% 83%}
+    50%{background-position:100% 18%}
+    100%{background-position:0% 83%}
 }
-#light {
-    opacity: 1;
-    background: radial-gradient(at 0% 0%, yellow, red, yellow, black);
-    height: 1500px;
-    width: 3500px;
-    border-radius: 25% 25% 25% 25%;
-    position: absolute;
-    z-index: 60;
-    bottom: 0;
-    animation: over 12s ease forwards;
-}
-@keyframes over {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: .2;
-    }
+@keyframes AnimationName {
+    0%{background-position:0% 83%}
+    50%{background-position:100% 18%}
+    100%{background-position:0% 83%}
 }
 
 @keyframes move-sun {
@@ -72,22 +46,37 @@ body {
     top: 300px;
     width: 30vw;
     height: 10vh;
-    animation: move-sun 10s infinite linear;
+    animation: move-sun 200s infinite linear;
     z-index: -5 ;
 }
 .sun_sun {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: #ff0;
+    background-image: url("../img/cageman.jpg");
+    background-size: cover;
     border-radius: 50%;
-    bottom: 300px;
+    right: 300px;
+    top: 300px;
 }
+#light {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+    right: 300px;
+    top: 300px;
+    opacity: .5;
+    box-shadow: 0 0 100px 50px gold;
+}
+
+
 .moon_moon {
     position: absolute;
-    top: 300px;
+    left: 300px;
+    bottom: 300px;
     animation: rotate 100s ease-in-out infinite;
-
 }
     @keyframes rotate {
         from {
@@ -151,3 +140,46 @@ body {
     width: 400px;
     z-index: -1;
 }
+
+/*#light {*/
+/*    height: 1px;*/
+/*    width: 50px;*/
+/*    animation: sunrise 200s infinite linear;*/
+/*}*/
+
+@keyframes sunrise {
+
+}
+/*.light_show {*/
+/*    left: 12%;*/
+/*    top: 12%;*/
+/*    height: 100vh;*/
+/*    width: 100vw;*/
+/*    position: absolute;*/
+/*    background-color: transparent;*/
+/*    animation: lightshow 10s infinite linear;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: flex-start;*/
+/*    border: none;*/
+/*}*/
+/*#light {*/
+/*    opacity: 1;*/
+/*    background: radial-gradient(at 0% 0%, gold, yellow, lightyellow, gold);*/
+/*    height: 1500px;*/
+/*    width: 3500px;*/
+/*    border-radius: 25% 25% 25% 25%;*/
+/*    position: absolute;*/
+/*    z-index: 60;*/
+/*    bottom: 0;*/
+/*    animation: over 12s ease forwards;*/
+/*    box-shadow: 0 0 1250px 250px yellow;*/
+/*}*/
+/*@keyframes over {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: .4;*/
+/*    }*/
+/*}*/
