@@ -1,377 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-}
-.container {
-    background-color: #0c0149;
-    /*background: linear-gradient(#00123f, #163da8, skyblue, lightblue, skyblue, #163da8, #00123f);*/
-    background-size: 5000% 5000%;
-    margin: 0;
-    max-width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    /*animation: bgchange 120s infinite ease-in-out;*/
-}
-/*@-webkit-keyframes bgchange {*/
-/*    0%{background-position:100% 0}*/
-/*    100%{background-position:0 100%}*/
-/*}*/
-@keyframes move-sun {
-    from {
-        transform: rotate(360deg);
-    }
+/* ==================== begin colors ====================== */
 
-    to {
-        transform: rotate(0deg);
-    }
+:root {
+    --red-color: #F6644E;
+    --white-color: #E8F1E2;
+    --yellow-color: #F4DE3A;
+    --green-lt-color: #83C058;
+    --green-drk-color: #286C65;
 }
-.rotadiv {
-    position: relative;
-    left: 35%;
-    top: 300px;
-    width: 30vw;
-    height: 10vh;
-    animation: move-sun 120s infinite linear;
-    z-index: -5 ;
+.red {
+    color: var(--red-color);
 }
-.sun_sun {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: lightyellow;
-    background-size: cover;
-    border-radius: 50%;
-    right: 300px;
-    top: 300px;
-    box-shadow: 0 0 100px 50px gold;
-    animation: fade-in 120s infinite;
-
+.white {
+    color: var(--white-color);
 }
-@keyframes fade-in {
-    0% {
-        opacity: .5;
-    } 10% {
-        opacity: .7;
-          }
-    20% {
-        opacity: .8;
-    }
-    30% {
-        opacity: .9;
-    }
-    40% {
-        opacity: 1;
-    }
-    75% {
-        opacity: .8;
-    }
-    100% {
-        opacity: .7
-    }
+.yellow {
+    color: var(--yellow-color);
+}
+.green-lt {
+    color: var(--green-lt-color);
+}
+.green-drk {
+    color: var(--green-drk-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+.bg-white {
+    background-color: var(--white-color);
+}
+.bg-yellow {
+    background-color: var(--yellow-color);
+}
+.bg-green-lt {
+    background-color: var(--green-lt-color);
+}
+.bg-green-drk {
+    background-color: var(--green-drk-color);
 }
 
-#light {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: yellow;
-    border-radius: 50%;
-    right: 300px;
-    top: 300px;
-    opacity: 1;
-    /*box-shadow: 0 0 100px 50px gold;*/
-    animation: light-shine 120s infinite;
-}
-@keyframes light-shine {
-    0%, 100% {
-        opacity: 1;
-    }
-    25% {
-        opacity: .5;
-    }
-    50% {
-        opacity: .1;
-    }
+/* ==================== end colors ======================= */
 
-    75% {
-        opacity: .5;
-    }
+.overflow {
+    overflow: visible;
 }
-#sun-gradient {
-    position: absolute;
-    left: 70%;
-    bottom: 16%;
-    height: 1vh;
-    width: 10vw;
-    background: linear-gradient(#0c0149, #0a1994, #0a21dd, #d20415, #4a7dfb, #4acbfb, #4acbfb, #7bd0f0,#4acbfb,#4acbfb, #4a7dfb, #d20415, #0a21dd, #0a1994, #0c0149);
-    background-size: 1400% 1400%;
-    animation: growing-sunrise 120s infinite, sun-colors 120s ease infinite,rotate-sun 120s infinite;
-    box-shadow: 0 0 200px 100px #0c0149;
-
-    z-index: -10;
+.plus-size {
+    font-size: 2em;
 }
-@keyframes growing-sunrise {
-    0%, 100% {
-        height: 1vh;
-        width: 10vw;
-    }
-    10% {
-        height: 20vh;
-        width: 40vw;
-    }
-    20% {
-        height: 80vh;
-        width: 60vw;
-        left: 40%;
-    }
-    30% {
-        height: 90vh;
-        width: 65vw;
-        left: 35%;
-    }
-    40% {
-        height: 100vh;
-        width: 70vw;
-        left: 30%;
-    }
-    50% {
-        height: 100vh;
-        width: 75vw;
-        left: 25%
-    }
-    60% {
-        height: 100vh;
-        width: 85vw;
-        left: 15%;
-    }
-    70% {
-        height: 100vh;
-        width: 75vw;
-        left: 5%;
-    }
-    80% {
-        height: 80vh;
-        width: 55vw;
-        left: 0;
-    }
-    90% {
-        height: 20vh;
-        width: 15vw;
-        left: 0;
-    }
-
+.black {
+    color: black;
 }
-
-@-webkit-keyframes sun-colors {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes sun-colors {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes sun-colors {
-    0%{background-position:100% 0%}
-    5%{background-position: 95% 5%}
-    10%{background-position: 90% 10%}
-    15%{background-position:85% 15%}
-    20%{background-position: 80% 20%}
-    25%{background-position: 75% 25%}
-    30%{background-position: 70% 30%}
-    35%{background-position: 65% 35%}
-    40%{background-position: 60% 40%}
-    45%{background-position: 55% 45%}
-    50%{background-position: 50% 50%}
-    55%{background-position: 45% 55%}
-    60%{background-position: 40% 60%}
-    65%{background-position:35% 65%}
-    70%{background-position:30% 70%}
-    75%{background-position:25% 75%}
-    80%{background-position:20% 80%}
-    85%{background-position:15% 85%}
-    90%{background-position:10% 90%}
-    95%{background-position:5% 95%}
-    100%{background-position:0 100%}
-
-
-}
-@keyframes rotate-sun {
-    0% {
-        transform: rotate(0deg);
-    }
-    70% {
-        transform: rotate(0deg);
-    }
-    71% {
-        transform: rotate(180deg);
-    }
-    79% {
-        transform: rotate(180deg);
-    }
-    80%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-.moon-glow {
-    height: 2px;
-    width: 2px;
-    box-shadow: 0 0 200px 100px white;
-    position: absolute;
-    left: 350px;
-    bottom: 400px;
-    animation: fade-glow 120s infinite;
-}
-@keyframes fade-glow {
-    0%, 100% {
-        opacity: 1;
-    }
-    25% {
-        opacity: .5;
-    }
-    50% {
-        opacity: .1;
-    }
-}
-.moon_moon {
-    position: absolute;
-    left: 300px;
-    bottom: 300px;
-    animation: rotate 100s ease-in-out infinite, fade-out 120s infinite;
-}
-    @keyframes rotate {
-        from {
-            transform: rotate(0);
-        } to {
-        transform: rotate(360deg);
-              }
-    }
-    @keyframes fade-out {
-        0% {
-            opacity: 1;
-        }
-        25% {
-            opacity: 1;
-        }
-        35% {
-            opacity: .5;
-        }
-        50% {
-            opacity: .1;
-        }
-        75% {
-            opacity: .7;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-.mounds {
-    position: absolute;
-    width: 100vw;
-    height: 50vw;
-    margin: 0;
-    z-index: -2;
-}
-.mound1 {
-    position: absolute;
-    z-index: -1;
-    left: -100px;
-    bottom: -400px;
-    height: 600px;
-    width: 40%;
-    border-radius: 45% 45% 0 0;
-    border: 2px solid forestgreen;
-    background-color: lightgreen;
-}
-.mound2 {
-    position: absolute;
-    left: 200px;
-    bottom: -300px;
-    height: 600px;
-    width: 60%;
-    border-radius: 75% 75% 0 0;
-    border: 2px solid forestgreen;
-    background-color: lightgreen;
-    z-index: -2;
-}
-.mound3 {
-    position: absolute;
-    left: 55%;
-    bottom: -350px;
-    height: 600px;
-    width: 50%;
-    border-radius: 48% 48% 0 0;
-    border: 2px solid forestgreen;
-    background-color: lightgreen;
-    z-index: -3;
-}
-#me {
-   position: absolute;
-    bottom: 75px;
-    height: 250px;
-    left: 200px;
-    z-index: 2;
-}
-#tree {
-    position: absolute;
-    left: -25px;
-    bottom: 75px;
-    height: 600px;
-    width: 400px;
-    z-index: -1;
-}
-
-/*#light {*/
-/*    height: 1px;*/
-/*    width: 50px;*/
-/*    animation: sunrise 200s infinite linear;*/
-/*}*/
-
-@keyframes sunrise {
-
-}
-/*.light_show {*/
-/*    left: 12%;*/
-/*    top: 12%;*/
-/*    height: 100vh;*/
-/*    width: 100vw;*/
-/*    position: absolute;*/
-/*    background-color: transparent;*/
-/*    animation: lightshow 10s infinite linear;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: flex-start;*/
-/*    border: none;*/
-/*}*/
-/*#light {*/
-/*    opacity: 1;*/
-/*    background: radial-gradient(at 0% 0%, gold, yellow, lightyellow, gold);*/
-/*    height: 1500px;*/
-/*    width: 3500px;*/
-/*    border-radius: 25% 25% 25% 25%;*/
-/*    position: absolute;*/
-/*    z-index: 60;*/
-/*    bottom: 0;*/
-/*    animation: over 12s ease forwards;*/
-/*    box-shadow: 0 0 1250px 250px yellow;*/
-/*}*/
-/*@keyframes over {*/
-/*    0% {*/
-/*        opacity: 0;*/
-/*    }*/
-/*    100% {*/
-/*        opacity: .4;*/
-/*    }*/
-/*}*/
