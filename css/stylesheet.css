@@ -1,51 +1,79 @@
 /* ==================== begin colors ====================== */
 
 :root {
-    --red-color: #F6644E;
-    --white-color: #E8F1E2;
-    --yellow-color: #F4DE3A;
-    --green-lt-color: #83C058;
-    --green-drk-color: #286C65;
-}
-.red {
-    color: var(--red-color);
-}
-.white {
-    color: var(--white-color);
-}
-.yellow {
-    color: var(--yellow-color);
-}
-.green-lt {
-    color: var(--green-lt-color);
-}
-.green-drk {
-    color: var(--green-drk-color);
-}
-.bg-red {
-    background-color: var(--red-color);
-}
-.bg-white {
-    background-color: var(--white-color);
-}
-.bg-yellow {
-    background-color: var(--yellow-color);
-}
-.bg-green-lt {
-    background-color: var(--green-lt-color);
-}
-.bg-green-drk {
-    background-color: var(--green-drk-color);
+    --dark-blue: #0B253A;
+    --orange: #ECAF8E;
+    --light-pink: #e9d3cf;
+    --light-blue: #539DB3;
+    --blue: #39657E;
 }
 
 /* ==================== end colors ======================= */
 
-.overflow {
-    overflow: visible;
+* {
+    margin: 0;
+    padding: 0;
 }
-.plus-size {
-    font-size: 2em;
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.black {
-    color: black;
+body {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr 22fr 1fr;
+    grid-template-areas:
+        " nav nav nav nav nav nav nav nav nav nav nav nav"
+        " main main main main main main main main main main main main "
+        "  foo foo foo foo foo foo foo foo foo foo foo foo";
+
+    height: 400vh;
+}
+.header {
+    grid-area: nav;
+    background: var(--blue);
+}
+nav h1 {
+    color: var(--light-pink);
+}
+.mainOne {
+    grid-area: main;
+    height: 240vh;
+}
+
+.mainDivOne {
+    background: var(--light-blue);
+    height: 85vh;
+}
+.mainDivOne h1 {
+    color: linen;
+}
+.mainDivTwo {
+    background: var(--light-pink);
+    height: 100vh;
+}
+.mainDivTwo h1 {
+    color: var(--dark-blue);
+}
+.mainDivThree {
+    background: var(--light-blue);
+    height: 100vh;
+}
+.mainDivThree h1 {
+    color: linen;
+}
+.mainDivFour {
+    background: var(--light-pink);
+    height: 85vh;
+}
+.mainDivFour h1 {
+    color: var(--dark-blue);
+}
+.footer {
+    grid-area: foo;
+    background: var(--blue);
+}
+.footer h1 {
+    color: linen;
 }
