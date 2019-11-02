@@ -2,10 +2,10 @@
 
 :root {
     --dark-blue: #0B253A;
-    --orange: #ECAF8E;
+    --orange: #FFA500;
     --light-pink: #e9d3cf;
     --light-blue: #539DB3;
-    --blue: #39657E;
+    --blue: #17435C;
 }
 
 /* ==================== end colors ======================= */
@@ -16,8 +16,13 @@
 }
 .centered {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+
 }
 body {
     display: grid;
@@ -47,7 +52,7 @@ nav h1 {
     height: 85vh;
 }
 .mainDivOne h1 {
-    color: linen;
+    color: var(--dark-blue);
 }
 .mainDivTwo {
     background: var(--light-pink);
@@ -76,4 +81,42 @@ nav h1 {
 }
 .footer h1 {
     color: linen;
+}
+.card {
+    background: #eceff1;
+    width: 70vw;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.doubleGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "icon aboutMe";
+}
+#icon {
+    grid-area: icon;
+}
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: aboutMe;
+    margin-top: 15%;
+}
+#aboutMe h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+#aboutMe h1:nth-of-type(2) {
+    color: var(--blue);
+    )
+}
+.smallButton {
+    background-color: var(--orange);
+    width: 15%;
+    height: 8%;
+    margin-top: -2%;
+    z-index: 2;
 }

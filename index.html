@@ -15,9 +15,15 @@
       </nav>
       <main class="mainOne">
          <div class="mainDivOne centered">
-            <h1>ABOUT ME?</h1>
+            <div class="card doubleGrid" style="position: relative">
+               <img id="icon" src="img/thumbs.png" height="70%" style="position: absolute; bottom: 0;">
+               <div id="aboutMe" class=""><h1>Hey there, I'm Jacob.</h1><h1> I'm a developer. </h1></div>
+            </div>
+            <div class="smallButton centered">
+               <a href="#secondSection"><i class="fas fa-chevron-down"></i></a>
+            </div>
          </div>
-         <div class="mainDivTwo centered">
+         <div class="mainDivTwo centered" id="secondSection">
             <h1>LANGUAGES I SPEAK</h1>
          </div>
          <div class="mainDivThree centered">
@@ -34,5 +40,6 @@
       </footer>
 
       <script src="js/jquery-2.2.4.js"></script>
+      <script src="js/index_js.js"></script>
    </body>
 </html>
