@@ -22,24 +22,47 @@
 }
 html {
     scroll-behavior: smooth;
-
 }
 body {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 1fr 22fr 1fr;
     grid-template-areas:
-        " nav nav nav nav nav nav nav nav nav nav nav nav"
+        " nav nav nav nav nav nav nav nav nav nav nav nav "
         " main main main main main main main main main main main main "
-        "  foo foo foo foo foo foo foo foo foo foo foo foo";
-
+        "  foo foo foo foo foo foo foo foo foo foo foo foo ";
     height: 400vh;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: linen;
+}
+a:hover {
+
 }
 .header {
     grid-area: nav;
     background: var(--blue);
+    display: flex;
+    align-items: end;
 }
-nav h1 {
+#navLinks {
+    display: flex;
+    justify-content: center;
+    margin-left: 13%;
+    align-items: flex-end;
+    height: 6.5em;
+    width: 85%;
+}
+#github {
+    margin-left: auto;
+}
+#linkedIn {
+    margin-left: 1%;
+}
+nav span {
     color: var(--light-pink);
 }
 .mainOne {
@@ -49,7 +72,7 @@ nav h1 {
 
 .mainDivOne {
     background: var(--light-blue);
-    height: 85vh;
+    height: 75vh;
 }
 .mainDivOne h1 {
     color: var(--dark-blue);
@@ -97,6 +120,9 @@ nav h1 {
 }
 #icon {
     grid-area: icon;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
 }
 #aboutMe {
     display: flex;
@@ -119,4 +145,19 @@ nav h1 {
     height: 8%;
     margin-top: -2%;
     z-index: 2;
+}
+#logo_filler {
+    border-radius: 50%;
+    width: 12%;
+    height: 20%;
+    background: linear-gradient(to top, #0B253A, #1D1E4F, #17435C, #FFA500,#e9d3cf);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+span {
+    color: linen;
+}
+.marginRight {
+    margin-right: 1%;
 }
