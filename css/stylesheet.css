@@ -80,9 +80,13 @@ nav span {
 .mainDivTwo {
     background: var(--light-pink);
     height: 100vh;
+    position: relative;
+
+
 }
 .mainDivTwo h1 {
     color: var(--dark-blue);
+
 }
 .mainDivThree {
     background: var(--light-blue);
@@ -160,4 +164,17 @@ span {
 }
 .marginRight {
     margin-right: 1%;
+}
+#noChin {
+    height: 50%;
+    position: absolute;
+    left: 4%;
+    bottom: 10%;
+}
+#chin {
+    position: absolute;
+    height: 50%;
+    left: -5%;
+    bottom: 0;
+    transform: rotate(23deg);
 }
