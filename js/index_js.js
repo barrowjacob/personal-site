@@ -23,4 +23,8 @@ $(document).ready(function() {
     $('#passion').click(function() {
         $(document).scrollTop(2234);
     });
+
+
+
+
 });

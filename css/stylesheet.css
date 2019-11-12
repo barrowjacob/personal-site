@@ -170,11 +170,27 @@ span {
     position: absolute;
     left: 4%;
     bottom: 10%;
+    animation: rotateHead 2s forwards;
+}
+@keyframes rotateHead {
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 #chin {
     position: absolute;
     height: 50%;
-    left: -5%;
+    left: 9%;
     bottom: 0;
-    transform: rotate(23deg);
+    transform: rotate(10deg);
+    animation: rotateChin 2s forwards;
 }
+@keyframes rotateChin {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(20deg) translateY(10px);
+    }
+}
+
