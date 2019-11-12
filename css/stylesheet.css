@@ -84,7 +84,7 @@ nav span {
 
 
 }
-.mainDivTwo h1 {
+.mainDivTwo .letter {
     color: var(--dark-blue);
 
 }
@@ -192,5 +192,11 @@ span {
     100% {
         transform: rotate(20deg) translateY(10px);
     }
+}
+.letter {
+    position: absolute;
+    z-index: 2;
+    left: 7%;
+    bottom: 22%;
 }
 
