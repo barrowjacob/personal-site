@@ -34,14 +34,13 @@ $(document).ready(function() {
     anime({
         targets: '.letter',
         opacity: 1,
-        translateX: 600,
-        rotate: anime.stagger([-360, 360]),
-                // duration: 4000,
-                // easing: 'easeInExpo',
-
+        translateX: function() { return anime.random(500, 700) + 'px'; },
+        translateY: function() { return anime.random(-200, 0) + 'px'; },
+                rotate: anime.stagger([-40, 40]),
+                duration: 2000,
+                easing: 'easeInOutQuad',
         scale: anime.stagger([0.7, 1], {from: 'center'}),
-        delay: anime.stagger(100, {start: 1000}),
-        translateY: -200
+        delay: anime.stagger(500, {start: 1000}),
     });
 });
 

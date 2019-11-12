@@ -190,13 +190,14 @@ span {
         transform: rotate(10deg);
     }
     100% {
-        transform: rotate(20deg) translateY(10px);
+        transform: rotate(20deg) translateY(20px);
     }
 }
 .letter {
     position: absolute;
     z-index: 2;
     left: 7%;
-    bottom: 22%;
+    bottom: 27%;
+    margin-right: 5%;
 }
 
