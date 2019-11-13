@@ -5,7 +5,7 @@ $(document).ready(function() {
     setTimeout(function () {
         $('#aboutMe').children().last().show("slow");
 
-    }, 1000)
+    }, 1000);
 
     $('body').click(function() {
         console.log($(document).scrollTop());
@@ -31,17 +31,78 @@ $(document).ready(function() {
     //     // borderRadius: 50
     //     loop: true
     // });
-    anime({
+    let newTimeline = anime.timeline({
         targets: '.letter',
         opacity: 1,
-        translateX: function() { return anime.random(500, 700) + 'px'; },
-        translateY: function() { return anime.random(-200, 0) + 'px'; },
-                rotate: anime.stagger([-40, 40]),
-                duration: 2000,
-                easing: 'easeInOutQuad',
-        scale: anime.stagger([0.7, 1], {from: 'center'}),
-        delay: anime.stagger(500, {start: 1000}),
+        delay: 500,
+        easing: 'easeInOutQuad',
+
     });
+    newTimeline .add({
+        targets: '#html',
+        translateX: 600,
+        translateY: -200,
+        rotate: 40,
+    });
+    newTimeline .add({
+        targets: '#css',
+        translateX: 500,
+        translateY: -200,
+        rotate: -40,
+    },250);
+    newTimeline .add({
+        targets: '#javascript',
+        translateX: 490,
+        translateY: -110,
+        rotate: 25,
+
+    },500);
+    newTimeline .add({
+        targets: '#jquery',
+        translateX: 510,
+        translateY: -185,
+        rotate: -38,
+    },750);
+    newTimeline .add({
+        targets: '#sass',
+        translateX: 580,
+        translateY: -180,
+        rotate: 40,
+    });
+    newTimeline .add({
+        targets: '#react',
+        translateX: 540,
+        translateY: -220,
+        rotate: 0,
+    },1000);
+    newTimeline .add({
+        targets: '#java',
+        translateX: 480,
+        translateY: -160,
+        rotate: -90,
+
+    },1250);
+    newTimeline .add({
+        targets: '#mysql',
+        translateX: 540,
+        translateY: -160,
+        rotate: 0,
+    },1500);
+    newTimeline .add({
+        targets: '#spring',
+        translateX: 520,
+        translateY: -130,
+        rotate: 25,
+
+    },1750);
+    newTimeline .add({
+        targets: '#bootstrap',
+        translateX: 570,
+        translateY: -135,
+        rotate: -55,
+    },2000);
 });
+
+
 
 
