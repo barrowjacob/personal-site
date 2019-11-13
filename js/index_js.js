@@ -23,14 +23,7 @@ $(document).ready(function() {
     $('#passion').click(function() {
         $(document).scrollTop(2234);
     });
-    // anime ({
-    //     targets: '#lang',
-    //     translateX: 250,
-    //     duration: 4000,
-    //     direction: 'alternate',
-    //     // borderRadius: 50
-    //     loop: true
-    // });
+
     let newTimeline = anime.timeline({
         targets: '.letter',
         opacity: 1,
@@ -40,67 +33,106 @@ $(document).ready(function() {
     });
     newTimeline .add({
         targets: '#html',
-        translateX: 600,
-        translateY: -200,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 800, translateY: -260},
+        ],
         rotate: 40,
+        scale: 2.4
     });
     newTimeline .add({
         targets: '#css',
-        translateX: 500,
-        translateY: -200,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 500, translateY: -260},
+            ],
         rotate: -40,
+        scale: 2.4
+
     },250);
     newTimeline .add({
         targets: '#javascript',
-        translateX: 490,
-        translateY: -110,
-        rotate: 25,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 650, translateY: -290}
+            ],
+        rotate: 0,
+        scale: 2.4
+
 
     },500);
     newTimeline .add({
         targets: '#jquery',
-        translateX: 510,
-        translateY: -185,
-        rotate: -38,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 590, translateY: -170}
+            ],
+        rotate: 0,
+        scale: 2.4
+
     },750);
-    newTimeline .add({
-        targets: '#sass',
-        translateX: 580,
-        translateY: -180,
-        rotate: 40,
-    });
+
     newTimeline .add({
         targets: '#react',
-        translateX: 540,
-        translateY: -220,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 720, translateY: -170}
+            ],
         rotate: 0,
+        scale: 2.4
+
     },1000);
     newTimeline .add({
         targets: '#java',
-        translateX: 480,
-        translateY: -160,
-        rotate: -90,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 650, translateY: 40}
+            ],
+        rotate: 0,
+        scale: 2.4
+
 
     },1250);
     newTimeline .add({
         targets: '#mysql',
-        translateX: 540,
-        translateY: -160,
-        rotate: 0,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 520, translateY: 60}
+            ],
+        rotate: -40,
+        scale: 2.4
+
     },1500);
     newTimeline .add({
         targets: '#spring',
-        translateX: 520,
-        translateY: -130,
-        rotate: 25,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 590, translateY: 150}
+            ],
+        rotate: 0,
+        scale: 2.4
 
     },1750);
     newTimeline .add({
         targets: '#bootstrap',
-        translateX: 570,
-        translateY: -135,
-        rotate: -55,
+        keyframes: [
+            {translateX: 500},
+            {translateX: 720, translateY: 150}
+            ],
+        rotate: 0,
+        scale: 2.6
+
     },2000);
+    newTimeline .add({
+        targets: '#sass',
+        keyframes: [
+            {translateX: 500},
+            {translateX: 780, translateY: 60}
+        ],
+        rotate: 40,
+        scale: 2.4
+
+    },2250);
 });
 
 

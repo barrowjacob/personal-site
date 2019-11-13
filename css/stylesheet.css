@@ -166,24 +166,26 @@ span {
     margin-right: 1%;
 }
 #noChin {
-    height: 50%;
+    height: 70%;
     position: absolute;
     left: 4%;
     bottom: 10%;
     animation: rotateHead 2s forwards;
+    z-index: 10;
 }
 @keyframes rotateHead {
     100% {
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
     }
 }
 #chin {
     position: absolute;
-    height: 50%;
-    left: 9%;
-    bottom: 0;
+    height: 70%;
+    left: 11%;
+    bottom: -2%;
     transform: rotate(10deg);
     animation: rotateChin 2s forwards;
+    z-index: 10;
 }
 @keyframes rotateChin {
     0% {
@@ -197,7 +199,24 @@ span {
     position: absolute;
     z-index: 2;
     left: 7%;
-    bottom: 21%;
+    bottom: 34%;
     margin-right: 5%;
 }
+.images {
+    height: 50px;
+    width: 50px;
+}
+.hidden {
+    z-index: 0;
+}
+#lang_header {
+    margin-left: 7%;
+    margin-top: 2%;
+    padding: 1%;
 
+}
+#lang_header h1 {
+     font-size: 4em;
+    color: var(--dark-blue);
+
+ }
