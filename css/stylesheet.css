@@ -1,11 +1,11 @@
 /* ==================== begin colors ====================== */
 
 :root {
-    --dark-blue: #0B253A;
-    --orange: #FFA500;
-    --light-pink: #e9d3cf;
-    --light-blue: #539DB3;
-    --blue: #17435C;
+    --dark-blue: #163f8b;
+    --orange: #f2d582;
+    --light-pink: #eee0e0;
+    --light-blue:#a9d1d2;
+    --blue: #3985af;
 }
 
 /* ==================== end colors ======================= */
@@ -52,6 +52,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-left: 13%;
+    margin-bottom: 1%;
     align-items: flex-end;
     height: 6.5em;
     width: 85%;
@@ -64,6 +65,7 @@ a:hover {
 }
 nav span {
     color: var(--light-pink);
+    margin-left: 3%;
 }
 .mainOne {
     grid-area: main;
@@ -104,6 +106,7 @@ nav span {
 }
 .footer {
     grid-area: foo;
+    height: 25vh;
     background: var(--blue);
 }
 .footer h1 {
@@ -152,12 +155,12 @@ nav span {
 }
 #logo_filler {
     border-radius: 50%;
-    width: 12%;
-    height: 20%;
+    width: 5%;
+    height: 8%;
     background: linear-gradient(to top, #0B253A, #1D1E4F, #17435C, #FFA500,#e9d3cf);
     position: absolute;
-    left: 0%;
-    top: 0%;
+    left: 15%;
+    top: 2%;
 }
 span {
     color: linen;
@@ -170,30 +173,15 @@ span {
     position: absolute;
     left: 4%;
     bottom: 10%;
-    animation: rotateHead 2s forwards;
     z-index: 10;
-}
-@keyframes rotateHead {
-    100% {
-        transform: rotate(-20deg);
-    }
 }
 #chin {
     position: absolute;
-    height: 70%;
+    height: 72%;
     left: 11%;
     bottom: -2%;
     transform: rotate(10deg);
-    animation: rotateChin 2s forwards;
     z-index: 10;
-}
-@keyframes rotateChin {
-    0% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(20deg) translateY(20px);
-    }
 }
 .letter {
     position: absolute;

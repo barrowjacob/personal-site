@@ -4,7 +4,6 @@ $(document).ready(function() {
 
     setTimeout(function () {
         $('#aboutMe').children().last().show("slow");
-
     }, 1000);
 
     $('body').click(function() {
@@ -24,6 +23,7 @@ $(document).ready(function() {
         $(document).scrollTop(2234);
     });
 
+    function talkingHead() {
     let newTimeline = anime.timeline({
         targets: '.letter',
         opacity: 1,
@@ -133,7 +133,34 @@ $(document).ready(function() {
         scale: 2.4
 
     },2250);
+    }
+    var i = 0;
+    $(window).on('scroll', function() {
+        scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= 600 && i < 1)  {
+            $(talkingHead()), $(moveHead());
+            i++;
+
+        }
+    });
+function moveHead(){
+
+  let rotateChin = anime ({
+      targets: '#chin',
+      easing: 'easeInOutQuad',
+      rotate: 20,
+      translateY: 20
+  });
+  let rotateHead = anime({
+      targets: '#noChin',
+      easing: 'easeInOutQuad',
+      rotate: -20,
+
+  });
+
+}
 });
+
 
 
 
