@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+
     $('#aboutMe').children().last().hide();
 
     setTimeout(function () {
@@ -138,7 +139,6 @@ $(document).ready(function() {
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
         if (scrollPosition >= 600 && i < 1)  {
-            $('#langs').show();
             $(talkingHead()), $(moveHead());
             i++;
 
@@ -171,20 +171,10 @@ function moveHead(){
         }
     };
     stickyNav();
-    // and run it again every time you scroll
     $(window).scroll(function() {
         stickyNav();
     });
 });
-//         const myFunction = () => {
-//     if ($('window').scrollTop >= $('.sticky').scrollTop) {
-//         $('#navbar').addClass('.sticky')
-//     } else {
-//         $('#navbar').removeClass('.sticky');
-//     }
-// }
-// $('window').scroll = () => {myFunction()};
-// });
 
 
 
