@@ -138,6 +138,7 @@ $(document).ready(function() {
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
         if (scrollPosition >= 600 && i < 1)  {
+            $('#langs').show();
             $(talkingHead()), $(moveHead());
             i++;
 
@@ -157,9 +158,33 @@ function moveHead(){
       rotate: -20,
 
   });
-
 }
+
+
+    var stickyNavTop = $('#navbar').offset().top;
+    var stickyNav = function(){
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > stickyNavTop) {
+            $('#navbar').addClass('sticky');
+        } else {
+            $('#navbar').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+        stickyNav();
+    });
 });
+//         const myFunction = () => {
+//     if ($('window').scrollTop >= $('.sticky').scrollTop) {
+//         $('#navbar').addClass('.sticky')
+//     } else {
+//         $('#navbar').removeClass('.sticky');
+//     }
+// }
+// $('window').scroll = () => {myFunction()};
+// });
 
 
 
