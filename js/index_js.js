@@ -1,11 +1,23 @@
 
 $(document).ready(function() {
+    $('.cardOne').hide();
 
     $('#aboutMe').children().last().hide();
-
     setTimeout(function () {
         $('#aboutMe').children().last().show("slow");
     }, 1000);
+    setTimeout(() => {
+        $('#role').html(`husband`);
+    }, 2000);
+    setTimeout(() => {
+        $('#role').html(`musician`);
+    }, 2500);
+    setTimeout(() => {
+        $('#role').html(`problem-solver`);
+    }, 3000);
+    setTimeout(() => {
+        $('#role').html(`dreamer`);
+    }, 3500);
 
     $('body').click(function() {
         console.log($(document).scrollTop());
@@ -23,6 +35,8 @@ $(document).ready(function() {
     $('#passion').click(function() {
         $(document).scrollTop(2234);
     });
+
+
 
     function talkingHead() {
     let newTimeline = anime.timeline({
@@ -137,13 +151,20 @@ $(document).ready(function() {
     }
     var i = 0;
     $(window).on('scroll', function() {
-        scrollPosition = $(this).scrollTop();
+        let scrollPosition = $(this).scrollTop();
         if (scrollPosition >= 600 && i < 1)  {
             $(talkingHead()), $(moveHead());
             i++;
-
         }
     });
+    var j = 0;
+    $(window).on('scroll', function() {
+        let scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= 960 && j < 1) {
+            $('.cardOne').fadeIn(1000);
+        }
+    });
+
 function moveHead(){
 
   let rotateChin = anime ({

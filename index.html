@@ -10,10 +10,7 @@
    </head>
    <body>
       <nav class="header centered" id="navbar">
-         <div id="logo_filler" class="header">
-            <img src="img/octo-logo.png">
-         </div>
-         <div id="navLinks">
+            <img src="img/octo-logo.png" id="logo_filler" alt="logo">
             <span class="marginRight">
                <a href="#" id="home1">Home</a>
             </span>
@@ -23,12 +20,12 @@
             <span class="marginRight">
                <a href="#" id="proj1">Projects</a>
             </span>
-            <span class="marginRight">
-               <a href="#" id="passion">Passion</a>
-            </span>
-            <span class="marginRight">
-               <a href="#" id="resume1">Resume</a>
-            </span>
+<!--            <span class="marginRight">-->
+<!--               <a href="#" id="passion">Passion</a>-->
+<!--            </span>-->
+<!--            <span class="marginRight">-->
+<!--               <a href="#" id="resume1">Resume</a>-->
+<!--            </span>-->
             <span class="marginRight">
                <a href="#" id="contact1">Contact</a>
             </span>
@@ -42,13 +39,12 @@
                   <i class="fab fa-linkedin"></i>
                </a>
             </span>
-         </div>
       </nav>
       <main class="mainOne">
          <div class="mainDivOne centered">
             <div class="card doubleGrid" style="position: relative">
                <img id="icon" src="img/thumbs.png">
-               <div id="aboutMe" class=""><h1>Hey there, I'm Jacob.</h1><h1> I'm a developer. </h1></div>
+               <div id="aboutMe"><h1>Hey there, I'm Jacob.</h1><h1> I'm a <span id="role">developer</span>. </h1></div>
             </div>
             <div class="smallButton centered">
                <a href="#secondSection"><i class="fas fa-chevron-down"></i></a>
@@ -60,7 +56,7 @@
                <img src="img/chin.png" id="chin">
             </div>
             <div id="lang_header">
-               <h1> Languages I Know: </h1>
+               <h1> Languages I speak: </h1>
             </div>
             <div id="langs">
                <div id="html" class="letter hidden"><img src="img/html.png" class="images"></div>
@@ -76,15 +72,69 @@
             </div>
          </div>
          <div class="mainDivThree centered">
-            <h1>MY PROJECT</h1>
+            <h1 class="shadowed">Here are a few of the projects I've been working on:</h1>
+            <div id="cards" class="cardHead">
+               <div class="cardOne">
+                  <img src="img/coffee.png" alt="coffee screenshot">
+                  <div class="subText">
+                     <h3>Coffee Project</h3>
+                     <p>This is a quick project implementing local storage manipulation, sorting and end-user modification of arrays.</p>
+                  </div>
+               </div>
+               <div class="cardOne">
+                  <img src="img/weather.png" alt="weather map screenshot">
+                  <div class="subText">
+                     <h3>Weather Map</h3>
+                     <p>Here is a project that demonstrates multiple API implementation and cross-application communication.</p>
+                  </div>
+               </div>
+               <div class="cardOne">
+                  <img src="img/uno.png" alt="uno cards">
+                  <div class="subText">
+                     <h3>Uno Card Game</h3>
+                     <p>This is a quick UNO game that I had created to demonstrate the capabilites of conditionals and nested loops.</p>
+                  </div>
+               </div>
+               <div class="cardOne">
+                  <img src="img/filmReel.jpeg" alt="movie application">
+                  <div class="subText">
+                     <h3>Movie Application</h3>
+                     <p>This is a project where users can create their own queues of movies, which are rateable, editable, and deletable.</p>
+                  </div>
+               </div>
+            </div>
          </div>
+<!--         <div class="mainDivFour centered">-->
+<!--            <h1> MY PASSIONS</h1>-->
+<!--            <div class="card" id="passionHolder" >-->
+<!--               <div class="imageClass">-->
+<!--                  <img src="img/placeholder.png" alt="image 1">-->
+<!--                  <img src="img/placeholder.png" alt="image 2">-->
+<!--                  <img src="img/placeholder.png" alt="image 3">-->
+<!--               </div>-->
+<!--               <div class="textClass">-->
+<!--                  <p>Things I would say to describe myself and what I'm passionate about, specifically referencing the included pictures.</p>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--         </div>-->
          <div class="mainDivFour centered">
-            <h1> MY PASSIONS</h1>
+            <h1> Let me help you acheive all of your development goals!</h1>
+            <div id="contacts">
+               <h2 class="margin"><i id="phone" class="fas fa-phone"></i>808.683.2239</h2>
+               <h2><i id="email" class="far fa-envelope"></i>Jacob.barrow@gmail.com</h2>
+            </div>
+            <div class="" id="resumeHolder">
+               <h1 class="marginTop">Preview my resume!</h1>
+               <button class="orange">Resume</button>
+            </div>
          </div>
       </main>
       <footer class="footer centered">
-         <div class="centered">
-            <h1>FOOTER THINGS</h1>
+         <div class="footerLeft">
+            <h1>Jacob Barrow</h1>
+            <h2>Jacob.barrow@gmail.com</h2>
+            <h3>(808) 683-2239</h3>
+            <h4>San Antonio, TX</h4>
          </div>
       </footer>
 
