@@ -1,8 +1,17 @@
 
 $(document).ready(function() {
-    $('.cardOne').hide();
+    $(this).scrollTop(0);
+    /*****************************/
+    //hide elements upon page load
+    /*****************************/
 
+    $('.cardOne').hide();
     $('#aboutMe').children().last().hide();
+
+    /*****************************/
+    // change roles on landing page
+    /*****************************/
+
     setTimeout(function () {
         $('#aboutMe').children().last().show("slow");
     }, 1000);
@@ -11,17 +20,25 @@ $(document).ready(function() {
     }, 2000);
     setTimeout(() => {
         $('#role').html(`musician`);
-    }, 2500);
+    }, 2700);
     setTimeout(() => {
         $('#role').html(`problem-solver`);
-    }, 3000);
+    }, 3400);
     setTimeout(() => {
         $('#role').html(`dreamer`);
-    }, 3500);
+    }, 4100)
 
-    $('body').click(function() {
-        console.log($(document).scrollTop());
-    });
+    /*****************************************************/
+    // functionality for checking current scroll position
+    /*****************************************************/
+
+            $('body').click(function() {
+                console.log($(document).scrollTop());
+            });
+
+    /***************************/
+    //navbar links for scrolling
+    /***************************/
 
     $('#home1').click(function() {
         $(document).scrollTop(0);
@@ -32,11 +49,13 @@ $(document).ready(function() {
     $('#proj1').click(function() {
         $(document).scrollTop(1475)
     });
-    $('#passion').click(function() {
-        $(document).scrollTop(2234);
+    $('#contact1').click(function() {
+        $(document).scrollTop(2295);
     });
 
-
+    /**********************************************/
+    // animejs timeline for animating language icons
+    /**********************************************/
 
     function talkingHead() {
     let newTimeline = anime.timeline({
@@ -44,7 +63,6 @@ $(document).ready(function() {
         opacity: 1,
         delay: 500,
         easing: 'easeInOutQuad',
-
     });
     newTimeline .add({
         targets: '#html',
@@ -63,7 +81,6 @@ $(document).ready(function() {
             ],
         rotate: -40,
         scale: 2.4
-
     },250);
     newTimeline .add({
         targets: '#javascript',
@@ -73,8 +90,6 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.4
-
-
     },500);
     newTimeline .add({
         targets: '#jquery',
@@ -84,9 +99,7 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.4
-
     },750);
-
     newTimeline .add({
         targets: '#react',
         keyframes: [
@@ -95,7 +108,6 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.4
-
     },1000);
     newTimeline .add({
         targets: '#java',
@@ -105,8 +117,6 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.4
-
-
     },1250);
     newTimeline .add({
         targets: '#mysql',
@@ -116,7 +126,6 @@ $(document).ready(function() {
             ],
         rotate: -40,
         scale: 2.4
-
     },1500);
     newTimeline .add({
         targets: '#spring',
@@ -126,7 +135,6 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.4
-
     },1750);
     newTimeline .add({
         targets: '#bootstrap',
@@ -136,7 +144,6 @@ $(document).ready(function() {
             ],
         rotate: 0,
         scale: 2.6
-
     },2000);
     newTimeline .add({
         targets: '#sass',
@@ -146,9 +153,13 @@ $(document).ready(function() {
         ],
         rotate: 40,
         scale: 2.4
-
     },2250);
     }
+
+    /****************************************/
+    // make head animate upon scroll position
+    /****************************************/
+
     var i = 0;
     $(window).on('scroll', function() {
         let scrollPosition = $(this).scrollTop();
@@ -157,6 +168,11 @@ $(document).ready(function() {
             i++;
         }
     });
+
+    /***********************************************/
+    // make project cards appear upon scroll position
+    /***********************************************/
+
     var j = 0;
     $(window).on('scroll', function() {
         let scrollPosition = $(this).scrollTop();
@@ -165,22 +181,27 @@ $(document).ready(function() {
         }
     });
 
-function moveHead(){
+    /*******************/
+    //animate moving head
+    /*******************/
 
-  let rotateChin = anime ({
-      targets: '#chin',
-      easing: 'easeInOutQuad',
-      rotate: 20,
-      translateY: 20
-  });
-  let rotateHead = anime({
-      targets: '#noChin',
-      easing: 'easeInOutQuad',
-      rotate: -20,
+    function moveHead(){
+      let rotateChin = anime ({
+          targets: '#chin',
+          easing: 'easeInOutQuad',
+          rotate: 20,
+          translateY: 20
+      });
+      let rotateHead = anime({
+          targets: '#noChin',
+          easing: 'easeInOutQuad',
+          rotate: -20,
+      });
+    }
 
-  });
-}
-
+    /******************/
+    //make navbar sticky
+    /******************/
 
     var stickyNavTop = $('#navbar').offset().top;
     var stickyNav = function(){

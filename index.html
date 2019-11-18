@@ -9,47 +9,63 @@
       <title>Personal Site</title>
    </head>
    <body>
+
+<!-------------------------------------->
+<!---------------NAVBAR----------------->
+<!-------------------------------------->
+
       <nav class="header centered" id="navbar">
-            <img src="img/octo-logo.png" id="logo_filler" alt="logo">
-            <span class="marginRight">
-               <a href="#" id="home1">Home</a>
-            </span>
-            <span class="marginRight">
-               <a href="#" id="lang1">Languages</a>
-            </span>
-            <span class="marginRight">
-               <a href="#" id="proj1">Projects</a>
-            </span>
-<!--            <span class="marginRight">-->
-<!--               <a href="#" id="passion">Passion</a>-->
-<!--            </span>-->
-<!--            <span class="marginRight">-->
-<!--               <a href="#" id="resume1">Resume</a>-->
-<!--            </span>-->
-            <span class="marginRight">
-               <a href="#" id="contact1">Contact</a>
-            </span>
-            <span id="github">
-               <a href="https://github.com/barrowjacob">
-                  <i class="fab fa-github"></i>
-               </a>
-            </span>
-            <span id="linkedIn">
-               <a href="https://www.linkedin.com/in/jacobmbarrow/" >
-                  <i class="fab fa-linkedin"></i>
-               </a>
-            </span>
+         <img src="img/octo-logo.png" id="logo_filler" alt="logo">
+         <span class="marginRight">
+            <a href="#" id="home1">Home</a>
+         </span>
+         <span class="marginRight">
+            <a href="#" id="lang1">Languages</a>
+         </span>
+         <span class="marginRight">
+            <a href="#" id="proj1">Projects</a>
+         </span>
+         <span class="marginRight">
+            <a href="#" id="contact1">Contact</a>
+         </span>
+         <span id="github">
+            <a href="https://github.com/barrowjacob">
+               <i class="fab fa-github"></i>
+            </a>
+         </span>
+         <span id="linkedIn">
+            <a href="https://www.linkedin.com/in/jacobmbarrow/" >
+               <i class="fab fa-linkedin"></i>
+            </a>
+         </span>
       </nav>
+
+<!-------------------------------------->
+<!--------------MAIN SECTION------------>
+<!-------------------------------------->
+
       <main class="mainOne">
+
+   <!-------------------------------------->
+   <!---------ABOUT ME SECTION------------->
+   <!-------------------------------------->
          <div class="mainDivOne centered">
             <div class="card doubleGrid" style="position: relative">
                <img id="icon" src="img/thumbs.png">
-               <div id="aboutMe"><h1>Hey there, I'm Jacob.</h1><h1> I'm a <span id="role">developer</span>. </h1></div>
+               <div id="aboutMe">
+                  <h1>Hey there, I'm Jacob.</h1>
+                  <h1> I'm a <span id="role">developer</span>. </h1>
+               </div>
             </div>
             <div class="smallButton centered">
                <a href="#secondSection"><i class="fas fa-chevron-down"></i></a>
             </div>
          </div>
+
+   <!-------------------------------------->
+   <!---------LANGUAGES SECTION------------>
+   <!-------------------------------------->
+
          <div class="mainDivTwo centered" id="secondSection">
             <div id="silhouette">
                <img src="img/noChin.png" id="noChin">
@@ -71,6 +87,11 @@
                <div id="bootstrap" class="letter hidden"><img src="img/bootstrap.png" class="images"></div>
             </div>
          </div>
+
+   <!-------------------------------------->
+   <!----------PROJECTS SECTION------------>
+   <!-------------------------------------->
+
          <div class="mainDivThree centered">
             <h1 class="shadowed">Here are a few of the projects I've been working on:</h1>
             <div id="cards" class="cardHead">
@@ -104,19 +125,11 @@
                </div>
             </div>
          </div>
-<!--         <div class="mainDivFour centered">-->
-<!--            <h1> MY PASSIONS</h1>-->
-<!--            <div class="card" id="passionHolder" >-->
-<!--               <div class="imageClass">-->
-<!--                  <img src="img/placeholder.png" alt="image 1">-->
-<!--                  <img src="img/placeholder.png" alt="image 2">-->
-<!--                  <img src="img/placeholder.png" alt="image 3">-->
-<!--               </div>-->
-<!--               <div class="textClass">-->
-<!--                  <p>Things I would say to describe myself and what I'm passionate about, specifically referencing the included pictures.</p>-->
-<!--               </div>-->
-<!--            </div>-->
-<!--         </div>-->
+
+   <!-------------------------------------->
+   <!---------CONTACT ME SECTION----------->
+   <!-------------------------------------->
+
          <div class="mainDivFour centered">
             <h1> Let me help you acheive all of your development goals!</h1>
             <div id="contacts">
@@ -129,6 +142,11 @@
             </div>
          </div>
       </main>
+
+<!-------------------------------------->
+<!----------FOOTER SECTION-------------->
+<!-------------------------------------->
+
       <footer class="footer centered">
          <div class="footerLeft">
             <h1>Jacob Barrow</h1>
@@ -137,6 +155,10 @@
             <h4>San Antonio, TX</h4>
          </div>
       </footer>
+
+<!-------------------------------------->
+<!---------------SCRIPTS---------------->
+<!-------------------------------------->
 
       <script src="js/jquery-2.2.4.js"></script>
       <script src="js/index_js.js"></script>
