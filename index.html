@@ -13,27 +13,27 @@
 <!-------------------------------------->
 <!---------------NAVBAR----------------->
 <!-------------------------------------->
-
+      <div id="topAnchor"></div>
       <nav class="header centered" id="navbar">
-         <img src="img/octo-logo.png" id="logo_filler" alt="logo">
+         <img src="img/octo-logo.png" id="logo" alt="logo">
          <span class="marginRight">
-            <a href="#" id="home1">Home</a>
+            <a href="#topAnchor">Home</a>
          </span>
          <span class="marginRight">
-            <a href="#" id="lang1">Languages</a>
+            <a href="#langAnchor" id="lang1">Languages</a>
          </span>
          <span class="marginRight">
-            <a href="#" id="proj1">Projects</a>
+            <a href="#projAnchor" id="proj1">Projects</a>
          </span>
          <span class="marginRight">
-            <a href="#" id="contact1">Contact</a>
+            <a href="#contactAnchor" id="contact1">Contact</a>
          </span>
-         <span id="github">
+         <span id="github" class="marginRight">
             <a href="https://github.com/barrowjacob">
                <i class="fab fa-github"></i>
             </a>
          </span>
-         <span id="linkedIn">
+         <span id="linkedIn" class="marginRight">
             <a href="https://www.linkedin.com/in/jacobmbarrow/" >
                <i class="fab fa-linkedin"></i>
             </a>
@@ -44,14 +44,14 @@
 <!--------------MAIN SECTION------------>
 <!-------------------------------------->
 
-      <main class="mainOne">
+      <main class="mainOne" id="top">
 
    <!-------------------------------------->
    <!---------ABOUT ME SECTION------------->
    <!-------------------------------------->
-         <div class="mainDivOne centered">
+         <div class="mainDivOne centered" id="home">
             <div class="card doubleGrid" style="position: relative">
-               <img id="icon" src="img/thumbs.png">
+               <img id="icon" src="img/thumbs.png" alt="icon">
                <div id="aboutMe">
                   <h1>Hey there, I'm Jacob.</h1>
                   <h1> I'm a <span id="role">developer</span>. </h1>
@@ -65,7 +65,7 @@
    <!-------------------------------------->
    <!---------LANGUAGES SECTION------------>
    <!-------------------------------------->
-
+         <div id="langAnchor"></div>
          <div class="mainDivTwo centered" id="secondSection">
             <div id="silhouette">
                <img src="img/noChin.png" id="noChin">
@@ -91,11 +91,11 @@
    <!-------------------------------------->
    <!----------PROJECTS SECTION------------>
    <!-------------------------------------->
-
+         <div id="projAnchor"></div>
          <div class="mainDivThree centered">
             <h1 class="shadowed">Here are a few of the projects I've been working on:</h1>
             <div id="cards" class="cardHead">
-               <div class="cardOne">
+               <div class="cardOne" id="coffeeCard">
                   <img src="img/coffee.png" alt="coffee screenshot">
                   <div class="subText">
                      <h3>Coffee Project</h3>
@@ -129,7 +129,7 @@
    <!-------------------------------------->
    <!---------CONTACT ME SECTION----------->
    <!-------------------------------------->
-
+         <div id="contactAnchor"></div>
          <div class="mainDivFour centered">
             <h1> Let me help you acheive all of your development goals!</h1>
             <div id="contacts">
